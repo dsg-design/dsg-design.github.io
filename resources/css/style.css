@@ -77,7 +77,7 @@ p {
 /*Mission Header*/
 #mission {
   display: flex;
-  background-image: url("https://dsg-design.github.io/resources/images/img-mission-background.JPG");
+  background-image: url("https://dsg-design.github.io/resources/images/img-mission.JPG");
   background-size: cover;
   height: 700px;
   width: 100%;
@@ -123,7 +123,7 @@ p {
 /*Locations*/
 #locations-container {
   display: flex;
-  background-image: url("http://media.nj.com/entertainment_impact_dining/photo/coffee-stock-photo-0e8b300f42157b6f.jpg");
+  background-image: url("https://dsg-design.github.io/resources/images/img-locations.JPG");
   background-size: cover;
   width: 100%;
   justify-content: center;
