@@ -1,165 +1,361 @@
+/*structure*/
 html {
-  font-family: Helvetica;
-  background-color: black;
-  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+  font-weight: 300;
 }
 
 body {
-  margin: 0px;
+  overflow-x: hidden;
 }
 
-a {
-  color: white;
-  font-size: 18px;
-  text-decoration: underline;
+h1 {
+  font-family: 'Nixie One', serif;
+  font-size: 3.3rem;
+  padding-bottom: 2rem;
 }
 
 h2 {
-  color: white;
-  font-weight: bold;
-  font-size: 36px;
-  margin: 10px 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-bottom: 16px;
+  padding-top: 16px;
 }
 
-h4, h3 {
-  color: white;
-  font-weight: bold;
-  font-size: 22px;
-  margin: 10px 0;
-  line-height: 1.5em;
+h3 {
+  font-size: 2.4rem;
+  font-family: 'Nixie One', serif;
 }
 
-p {
-  color: white;
-  font-weight: normal;
-  font-size: 22px;
-  margin: 10px 0;
-  line-height: 2em;
+h4 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding-bottom: 8px;
 }
 
-/*Nav*/
-.fixed-nav {
+h2, h3, h4, p {
+  line-height: 1.6;
+}
+
+a {
+  color: #3dbcb9;
+  text-decoration: none;
+  transition: color 0.2s linear 0s;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #219491;
+}
+
+.button {
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 8px 50px;
+  background-color: #3dbcb9;
+  border-radius: 30px;
+  color: #fff!important;
+  text-decoration: none;
+  transition: background-color 0.2s linear 0s;
+  margin-bottom: 32px;
+}
+
+.button:hover {
+  background-color: #219491;
+}
+
+.container {
   display: inline-flex;
+  width: 100%;
+}
+
+.side-content {
+  width: 40%;
+  padding-left: 16px;
+  flex-grow: 2;
+  padding: 16px 0;
+}
+
+.lg-image {
+  background-size: cover;
+  background-position: center;
+  width: 60%;
+  margin: 32px 24px;
+  flex-grow: 0;
+  flex-shrink: 2;
+}
+
+/*navigation*/
+.nav-container {
+  background-color: #fff;
   position: fixed;
-  background-color: black;
-  border-bottom: 1px solid seashell;
   width: 100%;
-  height: 69px;
+  display: inline-flex;
+  height: 64px;
   z-index: 10;
-  left: 0px;
-  top: 0px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+  align-items: center;
+  font-family: 'Lato';
+  justify-content: space-between;
 }
 
-.nav-logo {
+.nav-container li {
+  display: inline;
+  padding: 16px;
+}
+
+.logo {
+  margin-left: 24px;
+  height: 44px;
+  padding-top: 10px;
   display: inline-flex;
   align-items: center;
-  margin-left: 10px;
-  width: 25%;
+  position: relative;
+  bottom: 6px;
 }
 
-.nav-logo img {
-  height: 50px;
+.mobile-nav {
+  display: none;
 }
 
-.nav {
-  display: inline-flex;
-  width: 75%;
-  justify-content: flex-end;
-  margin-right: 10px;
-}
-
-.nav-links {
-  display: inline-flex;
-  margin: 0 10px;
+/*header*/
+.header {
+  background-color: #ecf0f1;
+  margin-top: 64px;
   align-items: center;
 }
 
-/*Mission Header*/
-#mission {
-  display: flex;
-  background-image: url("https://dsg-design.github.io/resources/images/img-mission.JPG");
-  background-size: cover;
-  height: 700px;
+.hero {
+  background-image: url("../images/banner.jpg");
+  height: 600px;
+}
+
+.header h4 {
+  padding-bottom: 3.2rem;
+  font-weight: 300;
+}
+
+/*info and thesis*/
+.info-featured {
+  background-image: url("../images/information-main.jpg");
+  height: 353px;
+  display: block;
+}
+
+.info-featured h2 {
+  padding-top: 369px;
+}
+
+.info-row {
+  display: inline-flex;
+  align-items: center;
+  border-left: 1px #d8d8d8 solid;
+  border-bottom: 1px #d8d8d8 solid;
   width: 100%;
-  margin-top: 69px;
-  align-items: center;
+  background-color: #fff;
+  transition: background-color 0.2s linear 0s;
+}
+
+.last {
+  border-bottom: none;
+}
+
+.info-row:hover {
+  background-color: #e9f2f3;
+}
+
+.info-sq {
+  width: 160px;
+  margin: 16px;
+}
+
+.info-row p {
+  padding-bottom: 16px;
+}
+
+/*tiles*/
+.learn {
+  background-color: #ecf0f1;
   justify-content: center;
 }
 
-.header-overlay {
-  background-color: black;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+.section-title {
   text-align: center;
-}
-
-/*Tea of the Month*/
-#featured-column {
-  display: flex;
-  max-width: 1000px;
-  justify-content: center;
-  flex-flow: wrap row;
-  margin: 0px auto;
-  padding: 70px 0px;
-}
-
-.column-title {
+  padding: 32px 0 16px 0;
   width: 100%;
 }
 
-.featured-images {
+.wrap {
+  flex-wrap: wrap;
+}
+
+.tile {
+  background-color: #fff;
   display: block;
-  justify-content: center;
-  margin: 10px 15px;
+  margin: 16px;
+  width: 334px;
 }
 
-.featured-images img {
-  width: 300px;
-  height: 200px;
-  background-size: cover;
+.tile img {
+  height: 180px;
+  width: 334px;
+  overflow: hidden;
 }
 
-/*Locations*/
-#locations-container {
-  display: flex;
-  background-image: url("https://dsg-design.github.io/resources/images/img-locations.JPG");
-  background-size: cover;
-  width: 100%;
-  justify-content: center;
-  flex-flow: wrap row;
-  min-height: 500px;
-  align-content: center;
+.tile-text {
+  padding: 16px;
+  word-wrap: normal;
 }
 
-.locations-title {
-  width: 100%;
+.courses {
+  text-transform: uppercase;
+  color: #d8d8d8;
+  font-weight: 400;
 }
 
-.locations {
-  background-color: black;
-  width: 300px;
-  margin: 15px 20px;
-  padding: 15px 0;
-}
-
-/*Footer*/
+/*footer*/
 .footer {
-  display: block;
-  justify-content: center;
-  margin-top: 50px;
+  background-color: #219491;
+  color: #fff;
+  font-size: .8rem;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px;
+  margin-top: 24px;
+  align-items: center;
 }
 
-.footer a {
-  font-size: 22px;
+.footer li {
+  display: inline;
+  padding: 16px;
+  position: relative;
+  right: 32px;
 }
 
-.copyright{
-  display: block;
+@media screen and (min-width:901px) {
+  .info-banner {
+    display: none;
+  }
 }
 
-.copyright p {
-  font-size: 18px;
-  margin-left: 20px;
-  text-align: left;
+
+/*mobile*/
+@media screen and (max-width: 900px) {
+  body {
+    margin: 0;
+    top: 0;
+    display: block;
+  }
+
+  .title {
+    position: relative;
+    left: -15px;
+    word-wrap: normal;
+  }
+
+  .nav-container li {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: inline-flex;
+    padding: 16px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  .container {
+    display: block;
+    width: 100%;
+  }
+
+  .nav-container {
+    top: 0px;
+  }
+
+  .lg-image {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: 32px 0;
+  }
+
+  .side-content {
+    width: 100%;
+    margin: 16px;
+  }
+
+  .hero {
+    height: 180px;
+    width: 100%;
+  }
+
+  .header {
+    padding-bottom: 32px;
+    text-align: center;
+  }
+
+  .info-featured, .info-sq, .lg-image h2 {
+    display: none;
+  }
+
+  .info-banner {
+    max-width: 100%;
+    max-height: 160px;
+    overflow: hidden;
+    padding: 0 32px 0 2px;
+  }
+
+  .info-row {
+    display: block;
+    width: 100%;
+    border: none;
+  }
+
+  .info-row:hover {
+    background-color: #fff;
+  }
+
+  .info-text {
+    padding: 16px 16px 24px 16px;
+  }
+
+  .learn {
+    padding: 16px 0;
+  }
+
+  .tile img, p {
+    display: none;
+  }
+
+  .tile {
+    background-color: #fff;
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 16px auto;
+    align-items: center;
+  }
+
+  #side-thesis {
+    display: none;
+  }
+
+  .footer li {
+    display: none;
+  }
+
+  .footer p {
+    display: block;
+  }
 }

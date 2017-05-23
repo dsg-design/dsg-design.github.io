@@ -2,96 +2,192 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
-    <title>TeaCozy</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Nixie+One" rel="stylesheet">
+    <link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
+    <title>Colmar Academy</title>
   </head>
-<!--Dear reviewer: I learned the concepts, but disagreed with some
-of the design decisions made on the website we were supposed to copy.
-So I made my website scaling instead, and I hope you'll forgive me.-->
   <body>
-<!--Nav-->
-    <div class="fixed-nav">
-      <div class="nav-logo">
-        <img src="./resources/images/img-tea-cozy-logo.png" alt="">
+<!--nav-->
+    <div class="nav-container">
+      <div class="logo">
+        <img src="./resources/images/ic-logo.svg" alt="">
+        <p> <span style="font-family: 'Nixie One'; color: #219491;"> COLMAR</span> <span style="color:#000;">Academy</span></p>
       </div>
-      <div class="nav">
-        <div class="nav-links">
-          <a href="#mission">Mission</a>
+      <ul>
+        <li><a href="#">On campus</a></li>
+        <li><a href="#">Online</a></li>
+        <li><a href="#">For companies</a></li>
+        <li><a href="#">Sign in</a></li>
+      </ul>
+      <div class="mobile-nav">
+        <img src="./resources/images/ic-logo.svg" alt="">
+        <img src="./resources/images/ic-on-campus.svg">
+        <img src="./resources/images/ic-online.svg">
+        <img src="./resources/images/ic-login.svg">
+      </div>
+    </div>
+<!--header-->
+    <div class="container header">
+      <div class="hero lg-image">
+      </div>
+      <div class="side-content title">
+        <h1>Learn something <br>new everyday.</h1>
+        <h4>Take a look at what Colmar Academy has to offer.</h4>
+        <a class="button" href="#">Start Here</a>
+      </div>
+    </div>
+
+
+<!--info-->
+    <div class="container">
+      <div class="info-featured lg-image">
+        <h2>It doesn't hurt to keep practicing</h2>
+        <p>"Anyone who says they have only one life to live must not know how to read a book." We believe that a reader has to learn only as much technology as it’s needed to fully enjoy the magic of reading. Reading in times of digital content is changing, but it doesn’t mean it gives less pleasure. Just the opposite.</p>
+        <br>
+        <p><span style="font-size:12px; color:#d8d8d8">Emanuel, Sir Strategist at Hiring.com</span></p>
+      </div>
+
+      <div class="side-content">
+        <div class="info-row">
+          <div class="info-sq">
+            <img src="./resources/images/information-orientation.jpg" alt="" style="width:160px;height:160px;">
+          </div>
+          <div class="info-banner">
+            <img src="./resources/images/information-orientation-mobile.jpg" style="width:100%">
+          </div>
+          <div class="info-text">
+            <h4>Orientation date</h4>
+            <p>Tuesday, Oct 11th and Wednesday, Oct 12th from 8am to 3pm</p>
+            <a href="#">Read more</a>
+          </div>
         </div>
-        <div class="nav-links">
-          <a href="#featured-column">Featured Tea</a>
+        <div class="info-row">
+          <div class="info-sq">
+            <img src="./resources/images/information-campus.jpg"  style="width:160px;height:160px;">
+          </div>
+          <div class="info-banner">
+            <img src="./resources/images/information-campus-mobile.jpg" style="width:100%">
+          </div>
+          <div class="info-text">
+            <h4>Our Campus</h4>
+            <p>Find which campus is close to you</p>
+            <a href="#">Read more</a>
+          </div>
         </div>
-        <div class="nav-links">
-          <a href="#locations-container">Locations</a>
+        <div class="info-row last">
+          <div class="info-sq">
+            <img src="./resources/images/information-guest-lecture.jpg" style="width:160px;height:160px;">
+          </div>
+          <div class="info-banner">
+            <img src="./resources/images/information-guest-lecture-mobile.jpg" style="width:100%">
+          </div>
+          <div class="info-text">
+            <h4>Our guest lecturer</h4>
+            <p>Join a keynote with Oliver sack about music in medical treatments</p>
+            <a href="#">Read more</a>
+          </div>
         </div>
       </div>
     </div>
-<!--Mission Header-->
-    <div id="mission">
-      <div class="header-overlay">
-        <h2>Our Mission</h2>
-        <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+<!--tiles-->
+    <div class="learn section-title">
+      <h3>Start Learning</h3>
+    </div>
+    <div class="container learn wrap">
+      <div class="tile">
+        <img src="./resources/images/course-software.jpg" alt="">
+        <div class="tile-text">
+          <h4>Software Engineering</h4>
+          <p class="courses">Courses:</p>
+          <p>Web Development, Mobile Development, iOT, APIs</p>
+        </div>
+      </div>
+      <div class="tile">
+        <img src="./resources/images/course-computer-art.jpg" alt="">
+        <div class="tile-text">
+          <h4>Computer Art</h4>
+          <p class="courses">Courses:</p>
+          <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+        </div>
+      </div>
+      <div class="tile">
+        <img src="./resources/images/course-design.jpg" alt="">
+        <div class="tile-text">
+          <h4>Design</h4>
+          <p class="courses">Courses:</p>
+          <p>User Experience Design, User Research, Visual Design</p>
+        </div>
+      </div>
+      <div class="tile">
+        <img src="./resources/images/course-data.jpg" alt="">
+        <div class="tile-text">
+          <h4>Data</h4>
+          <p class="courses">Courses:</p>
+          <p>Data Science, Big Data, SQL, Data Visualization</p>
+        </div>
+      </div>
+      <div class="tile">
+        <img src="./resources/images/course-business.jpg" alt="">
+        <div class="tile-text">
+          <h4>Business</h4>
+          <p class="courses">Courses:</p>
+          <p>Product Development, Business Development, Startup</p>
+        </div>
+      </div>
+      <div class="tile">
+        <img src="./resources/images/course-marketing.jpg" alt="">
+        <div class="tile-text">
+          <h4>Marketing</h4>
+          <p class="courses">Courses:</p>
+          <p>Analytics, Content Marketing, Mobile Marketing</p>
+        </div>
       </div>
     </div>
-<!--Tea of the Month-->
-    <div id="featured-column">
-      <div class="column-title">
-        <h2>Tea of the Month</h2>
-        <h4>What's Steeping at The Tea Cozy?</h4>
+<!--thesis-->
+    <div class="section-title">
+      <h3>Thesis Exhibit</h3>
+    </div>
+    <div class="container">
+      <div class="lg-image">
+        <video width="100%" src="./resources/videos/thesis.mp4" poster="./resources/videos/poster.jpg" onclick="this.play();">
+        </video>
+        <h2>Reimagine Urban Design</h2>
+        <p>With the increase demand on metropolitan areas, urban design has taken on a new meaning. How can architects design the cityskapes with the maximum liveable space for citizens, while maximizing the efficiency of buildings? Our students have been tackling this problem their capstone projects.</p>
       </div>
-      <div class="featured-images">
-        <img src="./resources/images/img-berryblitz.jpg" alt="">
-        <h4>Fall Berry Blitz Tea</h4>
-      </div>
-      <div class="featured-images">
-        <img src="./resources/images/img-spiced-rum.jpg" alt="">
-        <h4>Spiced Rum Tea</h4>
-      </div>
-      <div class="featured-images">
-        <img src="./resources/images/img-donut.jpg" alt="">
-        <h4>Seasonal Donuts</h4>
-      </div>
-      <div class="featured-images">
-        <img src="./resources/images/img-myrtle-ave.jpg" alt="">
-        <h4>Myrtle Ave Tea</h4>
-      </div>
-      <div class="featured-images">
-        <img src="./resources/images/img-bedford-bizarre.jpg" alt="">
-        <h4>Bedford Bizarre Tea</h4>
+      <div class="side-content" id="side-thesis">
+        <div class="info-row">
+          <div class="info-sq">
+            <img src="./resources/images/thesis-fisma.jpg" alt="" style="width:160px;height:160px;">
+          </div>
+          <div class="info-text">
+            <h4>Fisma: Design and Modeling</h4>
+            <p>Designer showcase of new prototype product</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-sq">
+            <img src="./resources/images/thesis-now-and-then.jpg" alt="" style="width:160px;height:160px;">
+          </div>
+          <div class="info-text">
+            <h4>Architecture: Then and Now</h4>
+            <p>Research study about the transformation of the New York skyline</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
       </div>
     </div>
-<!--Locations-->
-    <div id="locations-container">
-      <div class="locations-title">
-        <h2>Locations</h2>
-      </div>
-      <div class="locations">
-        <h3>Downtown</h3>
-        <p>384 West 4th St <br>
-        Suite 108 <br>
-        Portland, Maine</p>
-      </div>
-      <div class="locations">
-        <h3>East Bayside</h3>
-        <p>3433 Phisherman's Avenue<br>
-        (Northwest Corner) <br>
-        Portland, Maine</p>
-      </div>
-      <div class="locations">
-        <h3>Oakdale</h3>
-        <p>515 Crescent Avenue<br>
-        Second Floor <br>
-        Portland, Maine</p>
-      </div>
-    </div>
-<!--Footer-->
+<!--footer-->
     <div class="footer">
-      <h2>The Tea Cozy</h2>
-      <a href="mailto:contact@theteacozy.com?subject=YourWebsiteWasBuiltBySomeoneBrilliant">contact@theteacozy.com</a>
-      <p>917-555-8904</p>
-    </div>
-    <div class="copyright">
-      <p>&#x24B8; The Tea Cozy 2017</p>
+      <div class="copyright">
+        <p>© 2017 Colmar Academy. All rights reserved.</p>
+      </div>
+      <ul>
+        <li>Terms</li>
+        <li>Privacy</li>
+      </ul>
     </div>
   </body>
 </html>
