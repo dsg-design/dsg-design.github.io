@@ -259,9 +259,14 @@ a:hover {
     position: relative;
     left: -15px;
     word-wrap: normal;
+    padding-left: 8px;
   }
 
-  .nav-container li {
+  .title h4 {
+    padding-right: 24px;
+  }
+
+  .nav-container li, .logo, .info-featured, .info-sq, .lg-image h2, .lg-image p, .tile img, .tile p, #side-thesis, .footer li {
     display: none;
   }
 
@@ -270,10 +275,6 @@ a:hover {
     padding: 16px;
     justify-content: space-between;
     width: 100%;
-  }
-
-  .logo {
-    display: none;
   }
 
   h1 {
@@ -311,10 +312,6 @@ a:hover {
     text-align: center;
   }
 
-  .info-featured, .info-sq, .lg-image h2 {
-    display: none;
-  }
-
   .info-banner {
     max-width: 100%;
     max-height: 160px;
@@ -340,10 +337,6 @@ a:hover {
     padding: 16px 0;
   }
 
-  .tile img, p {
-    display: none;
-  }
-
   .tile {
     background-color: #fff;
     display: block;
@@ -351,14 +344,6 @@ a:hover {
     text-align: center;
     margin: 16px auto;
     align-items: center;
-  }
-
-  #side-thesis {
-    display: none;
-  }
-
-  .footer li {
-    display: none;
   }
 
   .footer p {
